@@ -115,9 +115,9 @@
 
 //ASSIGNMENT
 var question = prompt("What is something you like to do?")
+console.log('The user likes to ' + question);
 if (question === "" || question === null) {
   prompt("Let's try that again. What is something you like to do?");
 } else {
-  console.log('The user likes to ' + question);
   alert("So you like to " + question + "? " + "Wow, you're so neat!");
 }
