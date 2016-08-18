@@ -1,6 +1,7 @@
-var name = "charlie";
-function assignment(x) {
-  console.log(x.charAt(0).toUpperCase() + x.slice(1));
+var name = prompt("What is your name?");
+name = capitalize(name);
+function capitalize(x) {
+  return x.charAt(0).toUpperCase() + x.substr(1, x.length);
 }
-
-assignment(name);
+console.log(name)
+alert("Your name is " + capitalize(name));
